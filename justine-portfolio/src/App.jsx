@@ -1,0 +1,153 @@
+
+import './App.css'
+
+function App() {
+  return (
+    <div className="portfolio">
+
+      {/* Navigation */}
+      <nav className="navbar">
+        <a href="#home" className="logo">
+          J<span>.</span>
+        </a>
+
+        <div className="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a href="#contact" className="nav-button">
+          Let's Talk ↗
+        </a>
+      </nav>
+
+      {/* Hero Section */}
+      <main className="hero" id="home">
+
+        <div className="hero-content">
+          <div className="availability">
+            <span className="status-dot"></span>
+            STUDENT WEB DEVELOPER
+          </div>
+
+          <p className="greeting">Hello, I'm</p>
+
+          <h1>
+            Justine<span>.</span>
+          </h1>
+
+          <h2>
+            Building my journey in
+            <span> Web Development.</span>
+          </h2>
+
+          <p className="description">
+            I'm a student passionate about creating websites
+            and exploring the world of web development.
+            Currently learning, improving, and building
+            projects one step at a time.
+          </p>
+
+          <div className="hero-buttons">
+            <a href="#projects" className="primary-button">
+              Explore My Work ↗
+            </a>
+
+            <a href="#about" className="secondary-button">
+              More About Me
+            </a>
+          </div>
+
+          <div className="social-text">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+          </div>
+        </div>
+
+        {/* Decorative Profile Card */}
+        <div className="hero-visual">
+          <div className="glow"></div>
+
+          <div className="profile-card">
+            <div className="card-top">
+              <span>MY PROFILE</span>
+              <span className="card-dots">● ● ●</span>
+            </div>
+
+            <div className="profile-avatar">J.</div>
+
+            <h3>Justine</h3>
+            <p>Student Web Developer</p>
+
+            <div className="card-divider"></div>
+
+            <div className="card-info">
+              <span>Currently learning</span>
+              <strong>React.js</strong>
+            </div>
+
+            <div className="card-info">
+              <span>Focus</span>
+              <strong>Frontend Development</strong>
+            </div>
+
+            <div className="card-footer">
+              <span className="status-dot"></span>
+              Always learning something new.
+            </div>
+          </div>
+
+          <div className="floating-tag tag-one">
+            &lt;/&gt; HTML & CSS
+          </div>
+
+          <div className="floating-tag tag-two">
+            ✦ React Developer
+          </div>
+        </div>
+
+      </main>
+
+      {/* About Section Placeholder */}
+      <section className="about-section" id="about">
+        <span className="section-label">01 / ABOUT ME</span>
+        <h2>Getting started, <span>growing every day.</span></h2>
+        <p>
+          Every project is an opportunity to learn,
+          improve, and turn ideas into reality.
+        </p>
+      </section>
+
+      {/* Projects Placeholder */}
+      <section className="about-section" id="projects">
+        <span className="section-label">02 / MY WORK</span>
+        <h2>Projects coming <span>soon.</span></h2>
+        <p>
+          This is where I'll showcase my development
+          projects and the things I've created.
+        </p>
+      </section>
+
+      {/* Contact Placeholder */}
+      <section className="about-section contact-section" id="contact">
+        <span className="section-label">03 / CONTACT</span>
+        <h2>Let's connect<span>.</span></h2>
+        <p>
+          Have a project or idea? I'd love to connect
+          and learn from others.
+        </p>
+      </section>
+
+      <footer>
+        © 2026 Justine. Built with React.js.
+      </footer>
+
+    </div>
+  )
+}
+
+export default App
