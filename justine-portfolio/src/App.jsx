@@ -169,13 +169,54 @@ function App() {
   </div>
 </section>
       <section className="about-section contact-section" id="contact">
-        <span className="section-label">03 / CONTACT</span>
-        <h2>Let's connect<span>.</span></h2>
-        <p>
-          Have a project or idea? I'd love to connect
-          and learn from others.
-        </p>
-      </section>
+  <span className="section-label">04 / GET IN TOUCH</span>
+
+  <h2>
+    Let's work <span>together.</span>
+  </h2>
+
+  <p>
+    Have a question, an idea, or just want to connect?
+    Feel free to reach out through any of my social accounts.
+  </p>
+
+  <div className="social-links">
+    <a
+      href="https://www.instagram.com/coolquietguy/"
+      target="_blank"
+      rel="noreferrer"
+      className="social-card"
+    >
+      <span>Instagram</span>
+      <strong>@coolquietguy</strong>
+    </a>
+
+    <a
+      href="https://github.com/ahrune"
+      target="_blank"
+      rel="noreferrer"
+      className="social-card"
+    >
+      <span>GitHub</span>
+      <strong>@ahrune</strong>
+    </a>
+
+    <div className="social-card">
+      <span>Discord</span>
+      <strong>@sicqs</strong>
+    </div>
+
+    <a
+      href="https://www.facebook.com/JustineArzadon23"
+      target="_blank"
+      rel="noreferrer"
+      className="social-card"
+    >
+      <span>Facebook</span>
+      <strong>Justine Arzadon</strong>
+    </a>
+  </div>
+</section>
 
       <footer>
         © 2026 Justine. Built with React.js.

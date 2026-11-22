@@ -58,3 +58,16 @@ environment, and create the initial portfolio interface.
 
 ### Status
 Day 1 development and initial documentation completed.
+
+## Day 2
+- Added a responsive mobile navigation menu.
+- Implemented menu toggle functionality using React useState.
+- Added mobile navigation styling using CSS media queries.
+- Added a dedicated Skills section.
+- Displayed HTML, CSS, JavaScript, and React.js.
+- Added Skills navigation link.
+- Implemented responsive skill cards with hover effects.
+- Improved the Contact section layout and design.
+- Added Instagram, GitHub, Discord, and Facebook details.
+- Created responsive social media cards.
+- Updated Contact section styling to match the portfolio's blue theme.
