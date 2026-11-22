@@ -26,11 +26,12 @@ function App() {
         </button>
 
         <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
-          <a href="#home" onClick={closeMenu}>Home</a>
-          <a href="#about" onClick={closeMenu}>About</a>
-          <a href="#projects" onClick={closeMenu}>Projects</a>
-          <a href="#contact" onClick={closeMenu}>Contact</a>
-        </div>
+  <a href="#home" onClick={closeMenu}>Home</a>
+  <a href="#about" onClick={closeMenu}>About</a>
+  <a href="#skills" onClick={closeMenu}>Skills</a>
+  <a href="#projects" onClick={closeMenu}>Projects</a>
+  <a href="#contact" onClick={closeMenu}>Contact</a>
+</div>
 
         <a href="#contact" className="nav-button">
           Let's Talk ↗
@@ -137,7 +138,36 @@ function App() {
           projects and the things I've created.
         </p>
       </section>
+      <section className="skills-section" id="skills">
+  <span className="section-label">02 / MY SKILLS</span>
+  <h2>Technologies I'm <span>learning.</span></h2>
+  <p>
+    These are the technologies I'm currently exploring
+    and improving my skills in.
+  </p>
 
+  <div className="skills-container">
+    <div className="skill-card">
+      <h3>HTML</h3>
+      <span>Structure</span>
+    </div>
+
+    <div className="skill-card">
+      <h3>CSS</h3>
+      <span>Styling</span>
+    </div>
+
+    <div className="skill-card">
+      <h3>JavaScript</h3>
+      <span>Programming</span>
+    </div>
+
+    <div className="skill-card">
+      <h3>React.js</h3>
+      <span>Framework</span>
+    </div>
+  </div>
+</section>
       <section className="about-section contact-section" id="contact">
         <span className="section-label">03 / CONTACT</span>
         <h2>Let's connect<span>.</span></h2>
