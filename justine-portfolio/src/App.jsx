@@ -1,21 +1,35 @@
 
+import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const closeMenu = () => {
+    setMenuOpen(false)
+  }
+
   return (
     <div className="portfolio">
-
-      {/* Navigation */}
       <nav className="navbar">
-        <a href="#home" className="logo">
+        <a href="#home" className="logo" onClick={closeMenu}>
           J<span>.</span>
         </a>
 
-        <div className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation"
+          aria-expanded={menuOpen}
+        >
+          {menuOpen ? '✕' : '☰'}
+        </button>
+
+        <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
+          <a href="#home" onClick={closeMenu}>Home</a>
+          <a href="#about" onClick={closeMenu}>About</a>
+          <a href="#projects" onClick={closeMenu}>Projects</a>
+          <a href="#contact" onClick={closeMenu}>Contact</a>
         </div>
 
         <a href="#contact" className="nav-button">
@@ -23,9 +37,7 @@ function App() {
         </a>
       </nav>
 
-      {/* Hero Section */}
       <main className="hero" id="home">
-
         <div className="hero-content">
           <div className="availability">
             <span className="status-dot"></span>
@@ -34,9 +46,7 @@ function App() {
 
           <p className="greeting">Hello, I'm</p>
 
-          <h1>
-            Justine<span>.</span>
-          </h1>
+          <h1>Justine<span>.</span></h1>
 
           <h2>
             Building my journey in
@@ -68,7 +78,6 @@ function App() {
           </div>
         </div>
 
-        {/* Decorative Profile Card */}
         <div className="hero-visual">
           <div className="glow"></div>
 
@@ -109,10 +118,8 @@ function App() {
             ✦ React Developer
           </div>
         </div>
-
       </main>
 
-      {/* About Section Placeholder */}
       <section className="about-section" id="about">
         <span className="section-label">01 / ABOUT ME</span>
         <h2>Getting started, <span>growing every day.</span></h2>
@@ -122,7 +129,6 @@ function App() {
         </p>
       </section>
 
-      {/* Projects Placeholder */}
       <section className="about-section" id="projects">
         <span className="section-label">02 / MY WORK</span>
         <h2>Projects coming <span>soon.</span></h2>
@@ -132,7 +138,6 @@ function App() {
         </p>
       </section>
 
-      {/* Contact Placeholder */}
       <section className="about-section contact-section" id="contact">
         <span className="section-label">03 / CONTACT</span>
         <h2>Let's connect<span>.</span></h2>
@@ -145,7 +150,6 @@ function App() {
       <footer>
         © 2026 Justine. Built with React.js.
       </footer>
-
     </div>
   )
 }
