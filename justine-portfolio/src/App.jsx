@@ -122,13 +122,78 @@ function App() {
       </main>
 
       <section className="about-section" id="about">
-        <span className="section-label">01 / ABOUT ME</span>
-        <h2>Getting started, <span>growing every day.</span></h2>
-        <p>
-          Every project is an opportunity to learn,
-          improve, and turn ideas into reality.
-        </p>
-      </section>
+  <span className="section-label">01 / ABOUT ME</span>
+
+  <h2>A little about <span>myself.</span></h2>
+
+  <div className="about-content">
+    <div className="about-text">
+      <h3>My journey into <span>coding.</span></h3>
+
+      <p>
+        Hi! I'm Justine, a second-year BSIT student who is
+        still exploring the world of programming and web
+        development.
+      </p>
+
+      <p>
+        I wasn't particularly interested in programming at
+        first. That changed during my first year when I
+        discovered inspiring developers and creators online.
+        Their work motivated me to start learning web
+        development and explore what I could create with code.
+      </p>
+
+      <p>
+        What I enjoy most about coding is its complexity and
+        creative freedom. Although there are limitations,
+        I believe code gives us the ability to turn almost
+        any idea into something real.
+      </p>
+
+      <p>
+        My goal is to become a Frontend Developer. I'm excited
+        to continue learning, improving my skills, taking on
+        new challenges, and growing throughout my journey
+        as a developer.
+      </p>
+    </div>
+
+    <div className="about-details">
+      <div className="about-detail-card">
+        <span className="detail-number">01</span>
+        <div>
+          <h3>Education</h3>
+          <p>2nd Year BSIT Student</p>
+        </div>
+      </div>
+
+      <div className="about-detail-card">
+        <span className="detail-number">02</span>
+        <div>
+          <h3>Interest</h3>
+          <p>Web Development & Programming</p>
+        </div>
+      </div>
+
+      <div className="about-detail-card">
+        <span className="detail-number">03</span>
+        <div>
+          <h3>Current Focus</h3>
+          <p>Frontend Development</p>
+        </div>
+      </div>
+
+      <div className="about-detail-card">
+        <span className="detail-number">04</span>
+        <div>
+          <h3>Future Goal</h3>
+          <p>Become a Frontend Developer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="about-section" id="projects">
         <span className="section-label">02 / MY WORK</span>

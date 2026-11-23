@@ -71,3 +71,10 @@ Day 1 development and initial documentation completed.
 - Added Instagram, GitHub, Discord, and Facebook details.
 - Created responsive social media cards.
 - Updated Contact section styling to match the portfolio's blue theme.
+
+## Day 3
+- Improved the About Me section.
+- Added a personal introduction about my journey into coding.
+- Included my educational background, interests, and career goals.
+- Created information cards for my education, interests, current focus, and future goal.
+- Added responsive styling for the About Me section.
