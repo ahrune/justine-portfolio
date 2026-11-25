@@ -113,11 +113,7 @@ function App() {
 
           <div className="floating-tag tag-one">
             &lt;/&gt; HTML & CSS
-          </div>
-
-          <div className="floating-tag tag-two">
-            ✦ React Developer
-          </div>
+          </div>         
         </div>
       </main>
 
